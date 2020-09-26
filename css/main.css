@@ -1,0 +1,191 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  background-color: #0D1313;
+  color: #B4AA97;
+}
+
+body {
+  margin: 0;
+}
+
+:root {
+  --black: #362c2d;
+  --gray: #8b7d74;
+  --dim-gray: #645852;
+  --tan: #dec5ab;
+  --indian-red: #c05746;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-moz-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-moz-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-moz-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.shown {
+  visibility: visible;
+  display: block;
+}
+
+.overshown {
+  overflow-y: scroll;
+}
+
+.overhidden {
+  overflow: hidden;
+}
+
+.backgroundfix {
+  background-attachment: fixed !important;
+}
+
+.textbox {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAEklEQVQImWMw09b5hI4ZaCAIAJDbJWhK9KnFAAAAAElFTkSuQmCC") repeat;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+/*____________________________________________________________________________________*/
+/* Header */
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url(../img/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+header.gameMasthead {
+  padding-top: 8rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url(../img/background.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+header.masthead p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #B4AA97;
+}
+
+@media (max-width: 719px) {
+  header.gameMasthead {
+    height: auto;
+  }
+  header.testHeader {
+    height: auto;
+  }
+  header h2 {
+    font-size: 38px
+  }
+}
+
+@media (min-width: 719px) {
+  header.gameMasthead {
+    padding-top: 12rem;
+  }
+}
+
+/*____________________________________________________________________________________*/
+/* Text */
+
+a, ul, ol, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, .p, h1, h2, h3, h4, h5, h6, p {
+  padding: 15px;
+  margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 25px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  color: #833721;
+}
+
+.h1, h1 {
+  font-size: 72px;
+}
+
+.h2, h2 {
+  font-size: 60px;
+}
+
+.h3, h3 {
+  font-size: 48px;
+}
+
+@media (max-width: 719px) {
+  .h3, h3 {
+    font-size: 34px;
+  }
+}
+
+.h4, h4 {
+  font-size: 36px;
+}
+
+.h5, h5 {
+  font-size: 24px;
+}
+
+.h6, h6 {
+  font-size: 20px;
+}
+
+.p, p {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
