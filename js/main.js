@@ -1,35 +1,40 @@
 'use strict';
-// Variables
+// Variable
+var shortImgScale = document.getElementById('shortImgScale');
+var longImgScale = document.getElementById('longImgScale');
 
 
-
-// Constant
-
-const menuTemp = document.getElementById('#menuTemp');
+// Declarations
 
 
+// Constants
+const menuTemp = document.getElementById('menuTemp');
 
 
-// Functions
+/*
+____________________________________________________________________________________
+Functions
+____________________________________________________________________________________
+*/
 
+document.documentElement.style.setProperty("--figureShortHight", shortImgScale);
+document.documentElement.style.setProperty("--figureLongHight", longImgScale);
 
+/*
+____________________________________________________________________________________
+Event Listeners
+____________________________________________________________________________________
+*/
 
-
-
-// Event Listeners
-
-
-// https://stackoverflow.com/a/31223774
-var lastScrollTop = 0;
-// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
-window.addEventListener("scroll", function(){ // or window.addEventListener("scroll"....
-   var st = window.pageYOffset; // Credits: "https://github.com/qeremy/so/blob/master/so.dom.js#L426"
-   if (st >= 850){
-     menuTemp.classList.add('colorTwo');
-     menuTemp.ClassList.remove('colorOne');
-   } else {
-     menuTemp.classList.add('colorOne');
-     menuTemp.ClassList.remove('colorTwo');
-   }
-   lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
-}, false);
+window.onscroll = function() {
+  var scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
+  console.log(scrollPos);
+  if (scrollPos >= 115) {
+    menuTemp.classList.remove('animate__animated', 'animate__slideInDown');
+    menuTemp.classList.add('animate__animated', 'animate__slideOutUp');
+  }
+  if (scrollPos <= 115) {
+    menuTemp.classList.remove('animate__animated', 'animate__slideOutUp');
+    menuTemp.classList.add('animate__animated', 'animate__slideInDown');
+  }
+}

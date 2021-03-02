@@ -4,102 +4,148 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="description" content="We are a multi-media company driven to bring affordably priced work to the public.">
+  <meta name="description" content="Welcome to my blog.">
   <meta name="author" content="Rayna Weeden">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="img/background.jpg">
 
-  <title>ImagineSkies Media</title>
-
+  <title>ImagineSkies Photography</title>
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Style Css -->
   <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.min.css">
   <!-- Font/icon List -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
 </head>
 
 <body>
 
   <!-- Nav Bar -->
 
-  <nav id="menuTemp" class="colorOne navbar navbar-expand-xl navbar-togglable fixed-top">
-    <div class="container">
+  <nav id="menuTemp" class="navbar navbar-expand-xl navbar-togglable fixed-top">
+    <div class="container-fluid">
 
       <!-- Toggler -->
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
       <!-- Collapse -->
-      <div class="collapse navbar-collapse mr-auto" id="navbarCollapse">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <a class="nav-link" href="https://github.com/Imagineskies">
 
-        <!-- Links -->
-        <ul class="nav navbar-nav custom-navbar mx-auto">
+          <!-- Heading -->
+          <ul class="nav navbar-nav mr-auto custom-navbar">
+            <li class="navbar navbar-light">
+              <span class="navbar-brand">ImagineSkies Photography</span>
+            </li>
+          </ul>
 
+          <!-- Links -->
+          <ul class="nav navbar-nav ml-auto custom-navbar">
 
-          <li class="nav-item active">
-            <a class="nav-link" href="#">
-              Home
-            </a>
-          </li>
+            <li class="nav-item-divider">
+              <span class="nav-link">
+                <span></span>
+              </span>
+            </li>
 
-          <li class="nav-item-divider">
-            <span class="nav-link">
-              <span>&#8741;</span>
-            </span>
-          </li>
+            <li class="nav-item">
+              <a class="d-none nav-link underline active" href="#">
+                Work
+              </a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="Pages/about.html">
-              About
-            </a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link underline active" href="index.html">
+                Work
+              </a>
+            </li>
 
-          <li class="nav-item-divider">
-            <span class="nav-link">
-              <span>&#8741;</span>
-            </span>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link underline" href="Pages/about.html">
+                About
+              </a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="Pages/poems.html">
-              Contact
-            </a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link underline" href="Pages/pricing.html">
+                Pricing
+              </a>
+            </li>
 
-          <!-- Nav Divider -->
+            <li class="nav-item">
+              <a class="nav-link underline" href="Pages/contac.html">
+                Contact
+              </a>
+            </li>
 
-          <li class="nav-item-divider">
-            <span class="nav-link">
-              <span></span>
-            </span>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.instagram.com/imagineskies/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
 
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/Imagineskies">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+
+            <!-- Nav Divider -->
+
+            <li class="nav-item-divider">
+              <span class="nav-link">
+                <span></span>
+              </span>
+            </li>
+
+          </ul>
 
       </div> <!-- / .navbar-collapse -->
 
     </div> <!-- / .container -->
   </nav>
 
-  <header class="masthead">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 text-left">
-          <h2 class="text-center">The Sky isn't our limit. It's our start.</h2>
-          <hr>
-          <p>ImagineSkies Media</p>
+
+  <header class="masthead main">
+    <div class="container-fluid h-100 d-flex align-intems-center">
+      <div class="row h-100 d-flex justify-contents-center">
+
+        <div class="workWrapper d-flex align-items-center">
+
+          <div class="col-lg-6 ml-auto">
+            <a href="places-things.html">
+              <div class="workWrapper">
+                <img class="work things-places" src="img/things-places.jpg" alt="things-places">
+              </div>
+              <h5>Places & Things</h5>
+            </a>
+          </div>
+
+          <div class="col-lg-6 mr-auto workWrapper">
+            <a href="people-animals.html">
+              <div class="workWrapper">
+                <img class="work people-animals" src="img/people-animals.jpg" alt="people-animals">
+              </div>
+              <h5>People & Animals</h5>
+            </a>
+          </div>
         </div>
+
+
       </div>
     </div>
   </header>
 
 
-
-
-
   <!-- Bootstrap core JavaScript -->
   <script src="js/jquery.min.js"></script>
-  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
   <script src="js/jquery.easing.min.js"></script>
