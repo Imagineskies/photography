@@ -92,14 +92,19 @@ header.people-animals {
   background-position: center center;
 }
 
-@media (max-width:719px) {
-  header.masthead h2 {
-    padding-top: 2rem;
-    font-size: 3.6rem;
-  }
+.workWrapperOne {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
 }
 
-h5.aboutHeader {
+.workWrapperTwo {
+  display: flex;
+  align-items: center;
+}
+
+.aboutHeader {
   font-size: 4.2rem;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
@@ -107,20 +112,116 @@ h5.aboutHeader {
   word-spacing: -5px;
 }
 
+.aboutParagraph {
+  line-height: 30px;
+  font-weight: 100;
+}
+
+header.pricing {
+  padding-top: 18rem;
+}
+
+.pricingHeader {
+  font-size: 4.2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  text-align: left;
+  word-spacing: -5px;
+}
+
+.pricingParagraph {
+  line-height: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  text-align: left;
+}
+
+.contactHeader {
+  font-size: 4.2rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  text-align: left;
+  word-spacing: -5px;
+}
+
+.contactParagraph {
+  line-height: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 100;
+  text-align: left;
+}
+
+.contactHeader.email {
+  display: block;
+}
+
+.contactHeader.emailMobile {
+  display: none;
+}
+
+
+@media (max-width:719px) {
+  header.masthead h2 {
+    padding-top: 2rem;
+    font-size: 3.6rem;
+  }
+
+  .workWrapperOne {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .workWrapperTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .aboutHeader {
+    font-size: 2.4rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    text-align: left;
+    word-spacing: -5px;
+  }
+
+  .aboutParagraph {
+    line-height: 30px;
+    font-weight: 100;
+    font-size: 1.6rem;
+  }
+  .contactHeader {
+    font-size: 3.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 200;
+    text-align: left;
+    word-spacing: -5px;
+  }
+
+  .contactParagraph {
+    line-height: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    text-align: left;
+  }
+  .contactHeader.email {
+    display: none;
+  }
+
+  .contactHeader.emailMobile {
+    display: block;
+  }
+}
+
 header.masthead p {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 200;
-  text-align: right
 }
 
 header.about img{
   width: 100%;
   height: auto
-}
-
-.aboutParagraph {
-  line-height: 30px;
-  font-weight: 100;
 }
 
 .p-50 {
@@ -187,6 +288,37 @@ nav#menuTemp {
   animation-fill-mode: forwards;
 }
 
+@media (max-width:719px) {
+  nav#menuTemp {
+    background-color: #000000;
+  }
+  nav#menuTemp .navbar-brand {
+    font-size: 2.8rem !important;
+    text-align: center;
+  }
+  nav#menuTemp a {
+    text-align: center
+  }
+}
+
+#navbarCollapse {
+  width: 100%;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav-item a {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social a {
+  margin: 0;
+}
+
 nav#menuTemp a {
   color: #FFFFFF;
   font-size: 2rem;
@@ -208,6 +340,12 @@ nav#menuTemp .navbar-brand {
 nav#menuTemp .fab {
   font-size: 3.2rem;
   color: #FFFFFF;
+  padding: 10px;
+}
+
+.navbar-toggler>i {
+  font-size: 2.8rem;
+  color: #ffffff;
 }
 
 nav#menuTemp .dropdown-menu {
@@ -376,9 +514,30 @@ a:hover {
 }
 
 /*____________________________________________________________________________________*/
-/* Animations */
+/* Forms */
 
 
+div>input {
+  width: 100%;
+  height: 100%;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: .375rem .75rem;
+  font-size: 2.8rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out
+}
 
 
 /*____________________________________________________________________________________*/
@@ -389,7 +548,7 @@ p {
   font-size: 16px;
   padding: 10px 0px 5px 5px;
   float: none;
-  color: #B4AA97;
+  color: #FFFFFF;
 }
 
 pre {
@@ -401,8 +560,12 @@ pre {
   color: #B4AA97;
 }
 
+b {
+  font-weight: bold;
+}
+
 ul {
-  text-decoration: none;https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode
+  text-decoration: none;
 }
 
 .wrapword {
