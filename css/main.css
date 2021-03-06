@@ -73,6 +73,7 @@ body {
 
 /*____________________________________________________________________________________*/
 /* Header */
+
 header.masthead {
   background-size: cover;
   object-fit: cover;
@@ -80,6 +81,31 @@ header.masthead {
   height: 100%;
   text-align: center;
 }
+
+header.masthead p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+}
+
+header.about img{
+  width: 100%;
+  height: auto
+}
+
+.p-50 {
+  padding: 50px;
+}
+
+.BottomButton {
+  padding: 50px;
+}
+
+header .container-fluid {
+  position: relative;
+  top: 10px;
+}
+
+/* Page: Work */
 
 header.places-things {
   background-image: url("../img/Things & Places/fire.jpg");
@@ -104,6 +130,9 @@ header.people-animals {
   align-items: center;
 }
 
+
+/* Page: About */
+
 .aboutHeader {
   font-size: 4.2rem;
   font-family: 'Josefin Sans', sans-serif;
@@ -116,6 +145,8 @@ header.people-animals {
   line-height: 30px;
   font-weight: 100;
 }
+
+/* Page: Pricing */
 
 header.pricing {
   padding-top: 18rem;
@@ -135,6 +166,12 @@ header.pricing {
   font-weight: 100;
   text-align: left;
 }
+
+.pricingParagraphMobile {
+  display: none;
+}
+
+/* Page: Contact */
 
 .contactHeader {
   font-size: 4.2rem;
@@ -159,25 +196,51 @@ header.pricing {
   display: none;
 }
 
-
-@media (max-width:719px) {
-  header.masthead h2 {
-    padding-top: 2rem;
-    font-size: 3.6rem;
+header.about .container-fluid {
+    top: 50px;
   }
 
+@media (max-width:719px) {
   .workWrapperOne {
     display: flex;
     height: 100%;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
   }
 
   .workWrapperTwo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
   }
+
+  header.main .container-fluid,
+  header.about .container-fluid {
+    top: 150px;
+  }
+
+  .contactHeader.email {
+    display: none;
+  }
+
+  .contactHeader.emailMobile {
+    display: block;
+  }
+}
+
+@media (max-width:993px) {
+  .pricingParagraphMobile {
+    display: block;
+  }
+}
+
+@media (max-width:1119px) {
+
+  header.masthead h2 {
+    padding-top: 2rem;
+    font-size: 3.6rem;
+  }
+
   .aboutHeader {
     font-size: 2.4rem;
     font-family: 'Josefin Sans', sans-serif;
@@ -205,79 +268,12 @@ header.pricing {
     font-weight: 100;
     text-align: left;
   }
-  .contactHeader.email {
-    display: none;
-  }
-
-  .contactHeader.emailMobile {
-    display: block;
-  }
 }
 
-header.masthead p {
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 200;
-}
-
-header.about img{
-  width: 100%;
-  height: auto
-}
-
-.p-50 {
-  padding: 50px;
-}
-
-.BottomButton {
-  padding: 50px;
-}
-
-
-/*____________________________________________________________________________________*/
-iframe {
-  border: 0;
-  margin: 15px;
-}
-
-hr {
-  border: none;
-  border-top: 5px double #A8897D;
-  color: #A8897D;
-  overflow: visible;
-  text-align: center;
-  height: 5px;
-}
-
-@media (max-width: 719px) {
-  .poems div {
-    display: block;
-  }
-
-  iframe {
-    border: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-}
-
-.list-group-item {
-  background-color: rgba(0, 0, 0, 0.0);
-  text-align: center;
-}
-
-/*____________________________________________________________________________________*/
-section.welcome {
-  background-color: #0D1313;
-  color: #B4AA97;
-  text-align: center;
-}
-
-section .dropdown-item {
-  color: #A8897D;
-}
 
 /*____________________________________________________________________________________*/
 /* Top Menu */
+
 nav#menuTemp {
   position: fixed;
   background-color: transparent;
@@ -288,12 +284,13 @@ nav#menuTemp {
   animation-fill-mode: forwards;
 }
 
-@media (max-width:719px) {
+@media (max-width:1366px) {
   nav#menuTemp {
     background-color: #000000;
   }
   nav#menuTemp .navbar-brand {
     font-size: 2.8rem !important;
+    width: 100%;
     text-align: center;
   }
   nav#menuTemp a {
@@ -490,7 +487,18 @@ figure img {
 /*____________________________________________________________________________________*/
 /* Standard */
 
+hr {
+  border: none;
+  border-top: 5px double #A8897D;
+  color: #A8897D;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
 iframe {
+  border: 0;
+  margin: 15px;
   width: 100%;
   height: 380px;
   margin-right: auto !important;
@@ -498,19 +506,15 @@ iframe {
 }
 
 a {
+  color: #FFFFFF;
   list-style-type: none;
   text-decoration: none;
 }
 
 a:hover {
-  color: #B4AA97;
+  color: #808080;
   list-style-type: none;
   text-decoration: none;
-}
-
-.container-fluid {
-  position: relative;
-  top: 10px
 }
 
 /*____________________________________________________________________________________*/
