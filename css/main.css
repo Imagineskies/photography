@@ -270,6 +270,43 @@ header.about .container-fluid {
   }
 }
 
+/* 404 Page */
+
+.masthead404 {
+  background: repeat url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBoAAAAhQCBuMOYEwAAAABJRU5ErkJggg=="), url('../img/Things & Places/fire.jpg');
+}
+
+#head404 {
+  font-size: 14.4rem;
+  font-family: 'Monoton', cursive !important;
+}
+
+/*____________________________________________________________________________________*/
+/* Skeleton Loading */
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0) 80%
+    ),
+    lightgray;
+  background-repeat: repeat-y;
+  background-size: 50px 500px;
+  background-position: 0 0;
+  animation: shine 1s infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 100% 0;
+  }
+}
+
 
 /*____________________________________________________________________________________*/
 /* Top Menu */
@@ -595,7 +632,6 @@ ul {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Josefin Slab', serif;
   font-weight: 500;
   color: #FFF;
 }
